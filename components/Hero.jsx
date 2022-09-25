@@ -44,6 +44,7 @@ export default function Hero({ token, dataUser }) {
 
   useEffect(() => {
     handleGetUser();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   async function handleVerificationEmail(e) {

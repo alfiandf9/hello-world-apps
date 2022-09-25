@@ -15,10 +15,12 @@ export default function Navbar({ token }) {
   return (
     <nav className="p-3 bg-gray-800 border-gray-700">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <a href="/" className="flex items-center text-xl self-center text-white">
-          <p className="font-normal">hello</p>
-          <span className=" font-semibold whitespace-nowrap">World</span>
-        </a>
+        <Link href="/">
+          <a className="flex items-center text-xl self-center text-white">
+            <p className="font-normal">hello</p>
+            <span className=" font-semibold whitespace-nowrap">World</span>
+          </a>
+        </Link>
 
         <button
           data-collapse-toggle="navbar-solid-bg"

@@ -17,3 +17,5 @@ export function FormErrorInput({ children }){
     <p className="mt-2 font-light text-red-400 text-sm">{children}</p>
   )
 }
+
+FormInput.displayName = 'FormInput'

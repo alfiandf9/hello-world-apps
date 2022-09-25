@@ -29,7 +29,7 @@ export async function getServerSideProps(context){
   }
 }
 
-export default function forgotPassword() {
+export default function ForgotPassword() {
   const [errorMessage, setErrorMessage] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
   const [disableButton, setDisableButton] = useState(false);
@@ -78,7 +78,7 @@ export default function forgotPassword() {
       <AuthHeader title="Forgot Password" subTitle="Request your new password using your email" />
       <AuthBody>
         {errorMessage && <AuthAlert onClickError={() => setErrorMessage(null)} errorMessage={errorMessage} />}
-        {successMessage && <AuthAlert onClickSuccess={() => setSuccessMessage(null)} successMesage={successMessage} />}
+        {successMessage && <AuthAlert onClickSuccess={() => setSuccessMessage(null)} successMessage={successMessage} />}
         <form onSubmit={handleSubmit(requestPassword)} method="POST">
           <div className="mb-3">
             <FormLabel id="email">Your Email</FormLabel>
